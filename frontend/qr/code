@@ -1,0 +1,13 @@
+const qr = require('qrcode');
+
+// Website URL
+const websiteUrl = 'https://www.LURe.com';
+
+// Generate QR code
+qr.toDataURL(websiteUrl, (err, url) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(url); // URL will contain the data URI of the generated QR code
+});

@@ -1,0 +1,60 @@
+/* Custom React Bootstrap CSS with Theme Colors and Font */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Nactar&display=swap');
+
+/* Primary Colors */
+:root {
+  --primary-color-black: #000000; /* Black */
+  --primary-color-white: #ffffff; /* White */
+  --primary-color-cherry-blossom-pink: #ffb7c5; /* Cherry Blossom Pink */
+  --primary-color-hot-pink: #ff69b4; /* Hot Pink */
+  --primary-color-grey: #808080; /* Grey */
+}
+
+/* Bootstrap Overrides */
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color-black);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--primary-color-white);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color-cherry-blossom-pink);
+  border-color: var(--primary-color-cherry-blossom-pink);
+  color: var(--primary-color-black);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-hot-pink);
+  border-color: var(--primary-color-hot-pink);
+}
+
+/* Forms */
+.form-control {
+  color: var(--primary-color-black);
+}
+
+/* Text Color */
+.text-primary {
+  color: var(--primary-color-cherry-blossom-pink);
+}
+
+.text-secondary {
+  color: var(--primary-color-hot-pink);
+}
+
+.text-muted {
+  color: var(--primary-color-grey);
+}
+
+/* Font Family */
+body {
+  font-family: 'Nactar', sans-serif;
+}
